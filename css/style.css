@@ -1,0 +1,101 @@
+:root {
+  --background-card: #fff;
+  --background-learn: #f8f8f8;
+  --background-internal: #f3f4f5;
+  --box-shadow: 0 10px 29px rgba(0, 0, 0, 0.2);
+  --color-text: #172533;
+  --color-text-soft: #626e76;
+  --color-accent: #7c47c0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Typographie */
+.learn {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 2.2rem 0;
+}
+/* RÃ¨gles reutilisables */
+
+.card {
+  background-color: white;
+  box-shadow: 0 10px 29px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  max-width: 400px;
+  padding: 0 2.5rem;
+
+}
+
+.learn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div{
+  margin-bottom: 30px;
+}
+
+/* label input */
+.titreInput{
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  
+}
+#email {
+  width: 100%;
+  background-color: var(--background-internal);
+  border-radius: 10px;
+  border: none;
+  padding: 1rem;
+}
+#pass {
+  width: 100%;
+  background-color: var(--background-internal);
+  border-radius: 10px;
+  border: none;
+  padding: 1rem;
+  font-size: 1.05rem;
+  color: var(--color-text-soft);
+}
+::placeholder{
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+#reminMe{
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  
+  
+}
+label.titreInput{
+  vertical-align:middle;
+}
+input#remindMe{
+   width:18px;
+   height: 18px;
+ 
+}
+
+/* boutton */
+
+button{
+  color:white;
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px 15px ;
+  width: 100%;
+height: 50px
+}
