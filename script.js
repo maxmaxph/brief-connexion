@@ -15,12 +15,12 @@ function validationEmail() {
   let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // FORMAT EMAIL !!! NE VERIFIE QUE LA SYNTAXE
 
   if (email === "") {
-    // SI MAIL VIDE, BORDURE INPUT ROUGE
+    // SI MAIL VIDE, BORDURE INPUT ROUGE ET MESSAGE D'ALERTE
     emailInput.style.borderColor = "red";
     emailError.innerText = "	\u26a0 L'adresse e-mail est requise.";
     emailError.style.color = "red";
   } else if (!emailRegex.test(email)) {
-    // SI FORMAT INVALIDE, BORDURE INPUT ROUGE
+    // SI FORMAT INVALIDE, BORDURE INPUT ROUGE ET MESSAGE D'ALERTE
     emailInput.style.borderColor = "red";
     emailError.innerText = "	\u26a0 L'adresse e-mail n'est pas valide.";
     emailError.style.color = "red";
@@ -38,7 +38,7 @@ function validationPass() {
   let password = passInput.value;
 
   if (password === "") {
-    // SI PASSWORD EST VIDE, BORDURE INPUT ROUGE
+    // SI PASSWORD EST VIDE, BORDURE INPUT ROUGE ET MESSAGE D'ALERTE
     passInput.style.borderColor = "red";
     passError.innerText = "	\u26a0 Le mot de passe est requis.";
     passError.style.color = "red";

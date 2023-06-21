@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 4 - HTML & CSS</title>
 
-  <title>Challenge 4 - HTML & CSS </title>
+    <!-- ce css permet simplement de mettre en page la présentation -->
+    <link rel="stylesheet" href="../css/presentation.css" />
 
-  <!-- ce css permet simplement de mettre en page la présentation -->
-  <link rel="stylesheet" href="../css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js"></script>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css">
-  <script src="script.js"></script>
-</head>
-
-<body>
-  <section class="learn">
-  <!-- Début de la zone d'entrainement -->
-  <div class="card">
-    <h1>Je me connecte avec mes identifiants</h1>
-    <div class="input">
-      <label class="titreInput" for="email">adresse email <br>
-        <input id="email" name="email" type="text" placeholder="chuck@norris.com"  autocomplete="email" required>
-        <span id="emailError"></span>
-      </label>
-    </div>
-    <div>
-      <label class="titreInput" for="pass">mot de passe <br>
-        <input id="pass" autocomplete="current-password" name="pass" type="password" placeholder="&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;"required>
-        <span id="passError"></span>
-      </label>
-    </div>
-    <div>
-      <input type="checkbox" id="remindMe">
-      <label for="remindMe" class="titreInput">Se souvenir de moi</label>
-    </div>
-    <div>
-      <button id="button" type="button">Connexion</button>
-    </div>
-  </div>
-  <!-- Fin de la zone d'entrainement -->
-</section>
-
-
-
-</body>
-
+  <body>
+    <section class="learn">
+      <!-- Début de la zone d'entrainement -->
+      <div class="card">
+        <h1>Je me connecte avec mes identifiants</h1>
+        <form autocomplete="on">
+          <div class="input">
+            <label class="titreInput" for="email"
+              >adresse email <br />
+              <input
+                id="email"
+                name="email"
+                type="text"
+                placeholder="chuck@norris.com"
+                required
+              />
+              <span id="emailError"></span>
+            </label>
+          </div>
+          <div>
+            <label class="titreInput" for="pass"
+              >mot de passe <br />
+              <input
+                id="pass"
+                name="pass"
+                type="password"
+                placeholder="&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;"
+                required
+              />
+              <span id="passError"></span>
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="remindMe" />
+            <label for="remindMe" class="titreInput">Se souvenir de moi</label>
+          </div>
+          <div>
+            <button id="button" type="button">Connexion</button>
+          </div>
+        </form>
+      </div>
+      <!-- Fin de la zone d'entrainement -->
+    </section>
+  </body>
 </html>
