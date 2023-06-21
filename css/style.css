@@ -54,17 +54,19 @@ div{
   width: 100%;
   background-color: var(--background-internal);
   border-radius: 10px;
-  border: none;
+  border-color: var(--background-internal);
   padding: 1rem;
+  border-style:solid;
 }
 #pass {
   width: 100%;
   background-color: var(--background-internal);
   border-radius: 10px;
-  border: none;
+  border-color: var(--background-internal);
   padding: 1rem;
   font-size: 1.05rem;
   color: var(--color-text-soft);
+  border-style:solid;
 }
 ::placeholder{
   font-size: 1.05rem;
@@ -99,3 +101,17 @@ button{
   width: 100%;
 height: 50px
 }
+
+/* ajout brief */
+/* input#pass:invalid{
+border: 2px dashed red;
+}
+input#pass:valid{
+border: 1px solid green;
+}
+input#mail:invalid{
+border: 2px dashed red;
+}
+input#email:valid{
+border: 1px solid green;
+} */
