@@ -18,9 +18,11 @@ function validationEmail() {
   if (email === '') { // SI MAIL VIDE, BORDURE INPUT ROUGE
     emailInput.style.borderColor = 'red';
     emailError.innerText = "L'adresse e-mail est requise.";
+    emailError.style.color = 'red'
   } else if (!emailRegex.test(email)) { // SI FORMAT INVALIDE, BORDURE INPUT ROUGE
     emailInput.style.borderColor = 'red';
     emailError.innerText = "L'adresse e-mail n'est pas valide.";
+    emailError.style.color = 'red'
   } else { // SI TOUT EST OK, BORDURES PAR DEFAUT
     emailInput.style.borderColor = '';
     emailError.innerText = '';
@@ -36,6 +38,7 @@ function validationPass() {
   if (password === '') { // SI PASSWORD EST VIDE, BORDURE INPUT ROUGE
     passInput.style.borderColor = 'red';
     passError.innerText = 'Le mot de passe est requis.';
+    passError.style.color = 'red';
   } else { // SI TOUT EST OK, BORDURES PAR DEFAUT
     passInput.style.borderColor = '';
     passError.innerText = '';
