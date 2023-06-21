@@ -7,11 +7,13 @@
   --color-text-soft: #626e76;
   --color-accent: #7c47c0;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 /* Typographie */
 .learn {
   font-family: "Poppins", sans-serif;
@@ -23,7 +25,8 @@ h1 {
   font-weight: 900;
   margin: 2.2rem 0;
 }
-/* RÃ¨gles reutilisables */
+
+/* Règles reutilisables */
 
 .card {
   background-color: white;
@@ -39,25 +42,28 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-div{
+
+div {
   margin-bottom: 30px;
 }
 
-/* label input */
-.titreInput{
+/* label / input */
+.titreInput {
   text-transform: uppercase;
   font-size: 0.85rem;
   font-weight: 700;
-  
+
 }
+
 #email {
   width: 100%;
   background-color: var(--background-internal);
   border-radius: 10px;
   border-color: var(--background-internal);
   padding: 1rem;
-  border-style:solid;
+  border-style: solid;
 }
+
 #pass {
   width: 100%;
   background-color: var(--background-internal);
@@ -66,52 +72,43 @@ div{
   padding: 1rem;
   font-size: 1.05rem;
   color: var(--color-text-soft);
-  border-style:solid;
+  border-style: solid;
 }
-::placeholder{
+
+::placeholder {
   font-size: 1.05rem;
   font-weight: 500;
 }
-#reminMe{
+
+#remindMe {
   font-size: 0.85rem;
   text-transform: uppercase;
   font-weight: 700;
-  
-  
+
+
 }
-label.titreInput{
-  vertical-align:middle;
+
+label.titreInput {
+  vertical-align: middle;
 }
-input#remindMe{
-   width:18px;
-   height: 18px;
- 
+
+input#remindMe {
+  width: 18px;
+  height: 18px;
+
 }
 
 /* boutton */
 
-button{
-  color:white;
+button {
+  color: white;
   background-color: var(--color-accent);
   border: none;
   border-radius: 10px;
   font-size: 1rem;
   font-weight: 700;
-  padding: 15px 15px ;
+  padding: 15px 15px;
   width: 100%;
-height: 50px
+  height: 50px
 }
 
-/* ajout brief */
-/* input#pass:invalid{
-border: 2px dashed red;
-}
-input#pass:valid{
-border: 1px solid green;
-}
-input#mail:invalid{
-border: 2px dashed red;
-}
-input#email:valid{
-border: 1px solid green;
-} */
